@@ -12,14 +12,12 @@ const HeroSection = () => {
     seconds: 0,
   });
 
-  // Initialize AOS (Animate on Scroll)
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  // Countdown timer logic
   useEffect(() => {
-    const targetDate = new Date("2025-3-31T23:59:59").getTime();
+    const targetDate = new Date("2025-03-31T23:59:59").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -38,6 +36,7 @@ const HeroSection = () => {
         setTimeLeft({ days, hours, minutes, seconds });
       } else {
         clearInterval(interval);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     }, 1000);
 
