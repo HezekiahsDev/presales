@@ -61,8 +61,13 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Wallet Connection Button */}
-        <div data-aos="fade-left">
+        {/* Wallet Connection & Status */}
+        <div className="flex items-center space-x-4" data-aos="fade-left">
+          {connected && (
+            <span className="text-green-400 font-semibold">
+              Wallet Connected
+            </span>
+          )}
           <WalletMultiButton className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition-colors" />
         </div>
 
@@ -97,7 +102,7 @@ const Header = () => {
             Home
           </a>
           <a
-            href="BuyTokens"
+            href="/BuyTokens"
             className="block py-2 px-4 text-white hover:bg-purple-700"
           >
             Buy Tokens
