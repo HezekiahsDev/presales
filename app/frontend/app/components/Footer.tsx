@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-r from-gray-700 to-indigo-800 text-white py-8">
-      <div className="container px-4">
+      <div className="container mx-auto px-4 py-4 justify-between items-center">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div data-aos="fade-up">
@@ -68,7 +68,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
-                href="https://twitter.com/solahash"
+                href="https://twitter.com/HezekiahsDev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-purple-300 transition-colors"
@@ -76,7 +76,7 @@ export default function Footer() {
                 <FaTwitter className="w-6 h-6" />
               </a>
               <a
-                href="https://t.me/solahash"
+                href="https://t.me/Hezekiahs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-purple-300 transition-colors"
@@ -84,7 +84,7 @@ export default function Footer() {
                 <FaTelegram className="w-6 h-6" />
               </a>
               <a
-                href="https://github.com/solahash"
+                href="https://github.com/HezekiahsDev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-purple-300 transition-colors"
@@ -92,7 +92,7 @@ export default function Footer() {
                 <FaGithub className="w-6 h-6" />
               </a>
               <a
-                href="https://discord.gg/solahash"
+                href="https://discord.gg/0x0sola"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-purple-300 transition-colors"
@@ -122,17 +122,18 @@ export default function Footer() {
               </button>
             </form>
           </div>
+          
         </div>
-
-        {/* Copyright Section */}
+ {/* Copyright Section */}
         <div
-          className="border-t border-gray-700 mt-8 pt-8 text-center"
+          className="py-8 text-center"
           data-aos="fade-up"
         >
           <p className="text-gray-300">
             &copy; {new Date().getFullYear()} SolaHash. All rights reserved.
           </p>
         </div>
+       
       </div>
     </footer>
   );

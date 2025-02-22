@@ -19,7 +19,7 @@ const HeroSection = () => {
 
   // Countdown timer logic
   useEffect(() => {
-    const targetDate = new Date("2023-12-31T23:59:59").getTime(); // Set your presale end date here
+    const targetDate = new Date("2025-3-31T23:59:59").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -45,11 +45,11 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white pt-24">
+    <section className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white py-24">
       <div className="container mx-auto px-4 text-center">
         {/* Hero Title */}
         <h1
-          className="text-5xl md:text-6xl font-bold mb-6"
+          className="text-4xl md:text-6xl font-bold mb-6"
           data-aos="fade-down"
         >
           Welcome to <span className="text-purple-400">SolaHash</span>
@@ -102,7 +102,7 @@ const HeroSection = () => {
         {/* Buy Tokens Button */}
         <Link href="/BuyTokens">
           <button
-            className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg glow-on-hover transition-all"
+            className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 mx-4 px-8 rounded-lg glow-on-hover transition-all"
             data-aos="fade-up"
             data-aos-delay="400"
           >
