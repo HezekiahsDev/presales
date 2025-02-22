@@ -12,16 +12,16 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white py-8">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gradient-to-r from-gray-700 to-indigo-800 text-white py-8">
+      <div className="container px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div data-aos="fade-up">
-            <h3 className="text-xl font-bold mb-4">About SolaHash</h3>
-            <p className="text-gray-300">
+            <h3 className="text-xl font-bold">SolaHash</h3>
+            {/* <p className="text-gray-300">
               SolaHash is a decentralized platform for secure and efficient
               token sales. Join us and be part of the future of blockchain.
-            </p>
+            </p> */}
           </div>
 
           {/* Quick Links */}
