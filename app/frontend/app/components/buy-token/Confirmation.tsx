@@ -2,7 +2,7 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 
 type Props = {
-  style?: any;
+  style?: React.CSSProperties;
 };
 
 const Confirmation: FC<Props> = ({ style }) => {
